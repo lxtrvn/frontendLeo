@@ -7,6 +7,8 @@
   touch-action: none;
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Jellyfish theme background */
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
 }
 .rc-slider * {
   box-sizing: border-box;
@@ -17,13 +19,13 @@
   width: 100%;
   height: 4px;
   border-radius: 6px;
-  @apply bg-gray-300;
+  @apply bg-teal-100; /* Jellyfish theme: light teal rail */
 }
 .rc-slider-track {
   position: absolute;
   height: 4px;
   border-radius: 6px;
-  @apply bg-brand;
+  background: linear-gradient(135deg, #00d4ff, #0077ff); /* Jellyfish theme gradient */
 }
 .rc-slider-handle {
   position: absolute;
@@ -31,7 +33,7 @@
   height: 14px;
   margin-top: -5px;
   @apply bg-white dark:bg-gray-700;
-  @apply border-2 border-solid border-gray-900 dark:border-gray-500;
+  @apply border-2 border-solid border-blue-800 dark:border-blue-500; /* Jellyfish theme border */
   border-radius: 50%;
   cursor: pointer;
   cursor: -webkit-grab;
@@ -70,16 +72,17 @@
   width: 100%;
   font-size: 12px;
 }
+/* Jellyfish theme slider mark font colors */
 .rc-slider-mark-text {
   position: absolute;
   display: inline-block;
-  color: #999;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  color: #0077ff; /* Jellyfish theme font color */
 }
 .rc-slider-mark-text-active {
-  color: #666;
+  color: #005bb5; /* Darker blue for active state */
 }
 .rc-slider-step {
   position: absolute;
@@ -88,6 +91,7 @@
   background: transparent;
   pointer-events: none;
 }
+/* Updated slider dot button styling */
 .rc-slider-dot {
   position: absolute;
   bottom: -2px;
@@ -232,7 +236,7 @@
   line-height: 1;
   text-align: center;
   text-decoration: none;
-  background-color: #6c6c6c;
+  background-color: #0077ff; /* Match jellyfish blue */
   border-radius: 6px;
   box-shadow: 0 0 4px #d9d9d9;
 }

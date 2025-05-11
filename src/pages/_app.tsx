@@ -31,9 +31,9 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
   const wallets = useMemo(
     () => [
       new LeoWalletAdapter({
-        appName: 'Leo Demo App',
+        appName: 'ChronosVault',
         isMobile: reactDetectIsMobile,
-        mobileWebviewUrl: 'https://demo.leo.app',
+        mobileWebviewUrl: '',
       }),
     ],
     []
@@ -55,7 +55,7 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
           <WalletProvider
             wallets={wallets}
             decryptPermission={DecryptPermission.OnChainHistory}
-            programs={['credits.aleo']}
+            programs={['piggybanker10.aleo']}
             autoConnect
             network={'mainnet' as WalletAdapterNetwork}
           >

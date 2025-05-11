@@ -1,5 +1,5 @@
 const routes = {
-  gettingStarted: '/',
+  gettingStarted: '/records',
   sign: '/sign',
   decrypt: '/decrypt',
   records: '/records',
